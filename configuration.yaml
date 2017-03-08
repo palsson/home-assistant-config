@@ -1,0 +1,65 @@
+homeassistant:
+  name: Home
+  latitude: !secret location_home_lat
+  longitude: !secret location_home_long
+  elevation: !secret location_home_elevation
+  unit_system: metric
+  time_zone: Europe/Stockholm
+
+  customize:
+    light.dm_kitchen_corridor_level_4_0:
+      friendly_name: Korridor
+    light.dm_kitchen_island_level_6_0:
+      friendly_name: Köksö
+    light.dm_bedroom_ceiling_level_2_0:
+      friendly_name: Tak
+    switch.sw_bedroom_window_switch_15_0:
+      friendly_name: Fönster
+
+config:
+
+group: !include groups.yaml
+
+zwave:
+  usb_path: /dev/ttyACM0
+#  config_path: /home/homeassistant/.homeassistant/config
+
+
+# Enables the frontend
+frontend:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  # api_password: PASSWORD
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+# discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Weather Prediction
+sensor:
+  platform: yr
+
+# Text to speech
+tts:
+  platform: google
+
+# enable the iOS app
+# https://home-assistant.io/docs/ecosystem/ios/
+ios:

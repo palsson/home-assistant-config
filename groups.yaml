@@ -1,0 +1,23 @@
+
+  kitchen:
+    name: Kök
+    view: yes
+    entities:
+      - light.dm_kitchen_corridor_level_4_0
+      - light.dm_kitchen_island_level_6_0
+
+  bedroom:
+    name: Sovrum
+    view: yes
+    entities:
+      - light.dm_bedroom_ceiling_level_2_0
+      - switch.sw_bedroom_window_switch_15_0
+
+
+#group:
+#  kitchen:
+#    name: Kok
+#    view: yes
+#    entities:
+#      - light.dm_kitchen_corridor
+#      - light.dm_kitchen_island
