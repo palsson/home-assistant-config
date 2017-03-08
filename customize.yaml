@@ -1,0 +1,9 @@
+
+    light.dm_kitchen_corridor_level_4_0:
+      friendly_name: Korridor
+    light.dm_kitchen_island_level_6_0:
+      friendly_name: Köksö
+    light.dm_bedroom_ceiling_level_2_0:
+      friendly_name: Tak
+    switch.sw_bedroom_window_switch_15_0:
+      friendly_name: Fönster
