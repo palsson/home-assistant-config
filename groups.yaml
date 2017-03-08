@@ -5,6 +5,17 @@
     entities:
       - light.dm_kitchen_corridor_level_4_0
       - light.dm_kitchen_island_level_6_0
+      - light.dm_kitchen_sofa_level_9_0
+      - light.dm_kitchen_table_level_5_0
+      - light.dm_kitchen_worktop_level_3_0
+      - switch.sw_kitchen_cabinet_switch_17_0
+      - switch.sw_kitchen_window_switch_18_0
+
+  living_down:
+    name: TV rum
+    view: yes
+    entities:
+      - switch.sw_living_sofa_switch_8_0
 
   bedroom:
     name: Sovrum
@@ -13,11 +24,17 @@
       - light.dm_bedroom_ceiling_level_2_0
       - switch.sw_bedroom_window_switch_15_0
 
+  living_up:
+    name: Allrum
+    view: yes
+    entities:
+      - light.dm_main2_ceiling_level_12_0
+      - light.dm_main2_corridor_level_11_0
+      - switch.sw_main2_wall_switch_13_0
+      - switch.sw_main2_window_switch_14_0
 
-#group:
-#  kitchen:
-#    name: Kok
-#    view: yes
-#    entities:
-#      - light.dm_kitchen_corridor
-#      - light.dm_kitchen_island
+  outside:
+    name: Utebelysning
+    view: yes
+    entities:
+      - switch.sw_kitchen_streetlight_switch_16_0

@@ -1,9 +1,44 @@
 
+# Dimmers and switches in kitchen
     light.dm_kitchen_corridor_level_4_0:
       friendly_name: Korridor
     light.dm_kitchen_island_level_6_0:
       friendly_name: Köksö
+    light.dm_kitchen_sofa_level_9_0:
+      friendly_name: Soffan
+    light.dm_kitchen_table_level_5_0:
+      friendly_name: Matbord
+    light.dm_kitchen_worktop_level_3_0:
+      friendly_name: Vask
+    switch.sw_kitchen_cabinet_switch_17_0:
+      friendly_name: Vitrinskåp
+    switch.sw_kitchen_window_switch_18_0:
+      friendly_name: Fönster
+
+# Switches for downstairs living room
+    switch.sw_living_sofa_switch_8_0:
+      friendly_name: Soffan
+
+# Dimmers and switches for upstairs living room
+    light.dm_main2_ceiling_level_12_0:
+      friendly_name: Taklampa
+    light.dm_main2_corridor_level_11_0:
+      friendly_name: Korridor
+    switch.sw_main2_wall_switch_13_0:
+      friendly_name: Vägglampa
+    switch.sw_main2_window_switch_14_0:
+      friendly_name: Fönster
+
+# Dimmers and switches in bedroom
     light.dm_bedroom_ceiling_level_2_0:
       friendly_name: Tak
     switch.sw_bedroom_window_switch_15_0:
       friendly_name: Fönster
+
+# Switches for outside lights
+    switch.sw_kitchen_streetlight_switch_16_0:
+      friendly_name: Gatan
+
+# Wall plugs
+    switch.wp_one_switch_7_0:
+      friendly_name: Wall plug 1
