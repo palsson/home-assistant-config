@@ -1,7 +1,16 @@
 
+  default_view:
+    view: yes
+    entities:
+      - group.kitchen
+      - group.living_down
+      - group.bedroom
+      - group.living_up
+      - group.outside
+
   kitchen:
     name: Kök
-    view: yes
+#    view: yes
     entities:
       - light.dm_kitchen_corridor_level_4_0
       - light.dm_kitchen_island_level_6_0
@@ -13,20 +22,20 @@
 
   living_down:
     name: TV rum
-    view: yes
+#    view: yes
     entities:
       - switch.sw_living_sofa_switch_8_0
 
   bedroom:
     name: Sovrum
-    view: yes
+#    view: yes
     entities:
       - light.dm_bedroom_ceiling_level_2_0
       - switch.sw_bedroom_window_switch_15_0
 
   living_up:
     name: Allrum
-    view: yes
+#    view: yes
     entities:
       - light.dm_main2_ceiling_level_12_0
       - light.dm_main2_corridor_level_11_0
@@ -35,6 +44,6 @@
 
   outside:
     name: Utebelysning
-    view: yes
+#    view: yes
     entities:
       - switch.sw_kitchen_streetlight_switch_16_0
