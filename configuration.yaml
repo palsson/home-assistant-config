@@ -17,6 +17,8 @@ zwave:
 #  config_path: /home/homeassistant/.homeassistant/config
 
 
+scene: !include scenes.yaml
+
 # Enables the frontend
 frontend:
 

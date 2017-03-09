@@ -1,0 +1,52 @@
+
+# kitchen work lights
+  - name: kitchen_work
+    entities:
+      light.dm_kitchen_worktop_level_3_0:
+        state: on
+        brightness: 200
+      light.dm_kitchen_island_level_6_0:
+        state: on
+        brightness: 200
+      light.dm_kitchen_table_level_5_0:
+        state: on
+        brightness: 100
+      light.dm_kitchen_corridor_level_4_0:
+        state: on
+        brightness: 100
+      switch.sw_kitchen_window_switch_18_0: on
+      switch.sw_kitchen_cabinet_switch_17_0: on      
+
+# kitchen dinner lights
+  - name: kitchen_dinner
+    entities:
+      light.dm_kitchen_worktop_level_3_0:
+        state: off
+      light.dm_kitchen_island_level_6_0:
+        state: off
+      light.dm_kitchen_table_level_5_0:
+        state: on
+        brightness: 80
+      light.dm_kitchen_corridor_level_4_0:
+        state: on
+        brightness: 80
+      switch.sw_kitchen_window_switch_18_0: on
+      switch.sw_kitchen_cabinet_switch_17_0: on      
+
+# kitchen after dinner
+  - name: kitchen_after_dinner
+    entities:
+      light.dm_kitchen_worktop_level_3_0:
+        state: on
+        brightness: 120
+      light.dm_kitchen_island_level_6_0:
+        state: on
+        brightness: 120
+      light.dm_kitchen_table_level_5_0:
+        state: on
+        brightness: 80
+      light.dm_kitchen_corridor_level_4_0:
+        state: on
+        brightness: 80
+      switch.sw_kitchen_window_switch_18_0: on
+      switch.sw_kitchen_cabinet_switch_17_0: on      
