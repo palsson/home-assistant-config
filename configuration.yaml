@@ -19,6 +19,25 @@ zwave:
 
 scene: !include scenes.yaml
 
+
+#input_boolean:
+#  trigger_kitchen_work:
+#    name: Arbetsbelysning kök
+#    initial: off
+#    icon: mdi:car
+
+input_select:
+  trigger_kitchen_lights:
+    name: Köksbelysning
+    options:
+      - Laga mat
+      - Myspys
+      - Lagom
+    initial: Lagom
+    icon:  mdi:panda
+
+automation: !include automation.yaml
+
 # Enables the frontend
 frontend:
 

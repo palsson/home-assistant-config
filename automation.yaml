@@ -1,0 +1,27 @@
+
+- alias: Turn on kitchen work lights
+  trigger:
+    platform: state
+    entity_id: input_select.trigger_kitchen_lights
+    to: "Laga mat"
+  action:
+    service: scene.turn_on
+    entity_id: scene.kitchen_work
+
+- alias: Turn on kitchen myspys lights
+  trigger:
+    platform: state
+    entity_id: input_select.trigger_kitchen_lights
+    to: "Myspys"
+  action:
+    service: scene.turn_on
+    entity_id: scene.kitchen_dinner
+
+- alias: Turn on kitchen default lights
+  trigger:
+    platform: state
+    entity_id: input_select.trigger_kitchen_lights
+    to: "Lagom"
+  action:
+    service: scene.turn_on
+    entity_id: scene.kitchen_after_dinner
