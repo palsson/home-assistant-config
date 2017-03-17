@@ -49,3 +49,12 @@
     name: Utebelysning
     entities:
       - switch.sw_kitchen_streetlight_switch_16_0
+
+  outside_and_windows:
+    name: Ute och fönster
+    entities:
+      - switch.sw_kitchen_streetlight_switch_16_0
+      - switch.sw_bedroom_window_switch_15_0
+      - switch.sw_main2_window_switch_14_0
+      - switch.sw_kitchen_cabinet_switch_17_0
+      - switch.sw_kitchen_window_switch_18_0
