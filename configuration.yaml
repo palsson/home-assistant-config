@@ -36,6 +36,12 @@ input_select:
     initial: Lagom
     icon:  mdi:panda
 
+input_boolean:
+  trigger_away_mode:
+    name: Inte hemma
+    initial: off
+    icon: mdi:panda
+
 automation: !include automation.yaml
 
 # Enables the frontend
