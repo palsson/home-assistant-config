@@ -25,3 +25,44 @@
   action:
     service: scene.turn_on
     entity_id: scene.kitchen_after_dinner
+
+
+- alias: Turn on outside lights when sun sets
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-00:30:00"
+  action:
+    service: homeassistant.turn_on
+    entity_id: group.outside_and_windows
+
+- alias: Turn off outside lights when sun rise
+  trigger:
+    platform: sun
+    event: sunrise
+    offset: "00:30:00"
+  action:
+    service: homeassistant.turn_off
+    entity_id: group.outside_and_windows
+
+
+- alias: Turn on some lights when sun sets and we are away
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-00:30:00"
+  action:
+    service: homeassistant.turn_on
+    entity_id: group.away_lights
+
+- alias: Turn off some lights when it gets late and we are away
+  trigger:
+    platform: time
+    after: '23:35:00'
+  condition:
+    condition: state
+    entity_id: input_boolean.trigger_away_mode
+    state: 'on'
+  action:
+    service: homeassistant.turn_off
+    entity_id: group.away_lights    
